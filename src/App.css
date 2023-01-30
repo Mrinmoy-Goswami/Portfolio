@@ -1,38 +1,378 @@
-.App {
-  text-align: center;
+/* Designing the navbar */
+#container3 {
+  margin-top: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#container3 a {
+  scroll-behavior: smooth;
+  color: black;
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin: 0vw 2vw 1vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#container3 a:hover {
+  color: white;
+}
+#container3 li{
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+.container1 {
+  scroll-behavior: smooth;
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+/* STYLING OF THE HEADER SECTION */
+.Hellofont {
+  /* background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%); */
+  color: white;
+
+  /* background-clip: text;
+  -webkit-text-fill-color: transparent; */
+
+  font-family: 'Poppins';
+  font-size: 5vw;
+  margin-top: .5vw;
+  margin-bottom: .3vw;
+
+}
+
+.assistHeader1 {
+  color: black;
+  font-size: 2.5vw;
+  font-family: 'Poppins';
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.assistHeader2 {
+  color: black;
+  font-size: 1.5vw;
+  font-family: 'Poppins';
+  font-weight: 700;
+  margin-top: 0;
+}
+
+/* STYLING OF THE SKILLBAR SECTION */
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 15px 0px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1vw);
+  width: 45vw;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.heading {
+  display: flex;
+  font-family: 'Poppins';
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+  margin: 1vw 0;
+}
+
+.skillbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10vw;
+  height: .5vw;
+  border: .1vw solid white;
+  border-radius: 0px 10px 0px 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.skillbar span {
+  display: flex;
+  position: relative;
+  height: .5vw;
+
+  border-radius: 0px 10px 0px 10px;
+  background-image: linear-gradient(to right, cyan, blue);
+}
+
+.html {
+  width: 90%;
+  animation: html 2s ease-in;
+  scroll-behavior: smooth;
+
+}
+
+.css {
+  width: 90%;
+  animation: css 2s ease-in;
+
+}
+
+.javascript {
+  width: 80%;
+  animation: javascript 2s ease-in;
+
+}
+
+.dart {
+  width: 50%;
+  animation: dart 2s ease-in;
+}
+
+.cpp {
+  width: 70%;
+  animation: cpp 2s ease-in;
+
+}
+
+@keyframes html {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 90%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@keyframes css {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes javascript {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes dart {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes cpp {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 70%;
+  }
+}
+
+/* 
+  STYLING THE TECH STACK SECTION */
+.text {
+  font-size: 3vw;
+  color: white;
+}
+
+/*STYLING THE LOADER ANIMATION */
+/* #loader {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  animation: animation2 2s cubic-bezier(0.19, 1, 0.22, 1) 4.5s both;
+}
+
+#loaderWrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 50vw;
+  height: 40vw;
+  overflow: hidden;
+  background-color: gray;
+}
+
+#loaderWrap .item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0
+  ;
+}
+
+@keyframes animation1 {
+  to {
+    margin-top: -100px;
+  }
+}
+
+@keyframes animation2 {
+  to {
+    margin-top: -100vw;
+  }
+}
+
+#loaderWrap .item:nth-child(1) {
+  animation: animation1 2s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+
+#loaderWrap .item:nth-child(2) {
+  animation: animation1 2s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+}
+
+#loaderWrap .item:nth-child(3) {
+  animation: animation1 2s cubic-bezier(0.19, 1, 0.22, 1) 4.5s both;
+}
+
+#name {
+  color: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  ;
+}
+
+#name {
+  background-image: linear-gradient(45deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+/* STYLING THE PROJECTS SECTION */
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vw;
+  padding: .5vw;
+  display: flex;
+  border: 1px solid white;
+  height: 20vw;
+  width: 20vw;
+
+}
+
+.image {
+  display: flex;
+}
+
+#cardDetails1,
+#cardDetails2,
+#cardDetails3,
+#cardDetails4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.GlassCard {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 15px 0px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(1vw);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* STYLING THE FOOTER SECTION */
+.footer {
+  margin: 2vw 2vw 0;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 10vw;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  background-color: white;
+  margin: 1vw 1vw 0;
+  display: flex;
+
+
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  color: white;
+  padding: 5vw;
+}
+
+.socialIcons {
+  display: flex;
+
+}
+
+.conDetails {
+  margin: 0 2vw 0;
+  display: flex;
+  font-size: 1.5vw;
+  padding-top: 0.5vw;
 }

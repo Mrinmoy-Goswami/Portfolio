@@ -294,14 +294,15 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2vw;
-  padding: .5vw;
+  margin: 2%;
+  padding: 2%;
   display: flex;
   border: 1px solid white;
-  height: 20vw;
+  height: 25vw;
   width: 20vw;
 
 }
+
 
 .image {
   display: flex;
@@ -318,7 +319,6 @@ li {
   font-size: 1vw;
   color: white;
 }
-
 
 
 .GlassCard {

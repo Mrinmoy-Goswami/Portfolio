@@ -16,7 +16,7 @@ export default function Techstack() {
             autoStart: true,
             loop: true,
             delay: 40,
-            strings: ["ReactJS", "MongoDB", "Express JS", "Node JS", "Flutter"],
+            strings: ["ReactJS", "MongoDB", "Express JS", "Node JS", "Bootstrap"],
           }}
         />
       </div>

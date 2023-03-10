@@ -7,25 +7,25 @@ export default function Skills() {
         <h2 className="assistHeader">Skillset</h2>
 
         <li>
-          <span className="heading">HTML</span>
+          <span className="heading">HTML,CSS</span>
           <div className="skillbar">
             <span className="html"></span>
           </div>
         </li>
         <li>
-          <span className="heading">CSS</span>
+          <span className="heading">JavaScript</span>
           <div className="skillbar">
             <span className="css"></span>
           </div>
         </li>
         <li>
-          <span className="heading">JS</span>
+          <span className="heading">ReactJS</span>
           <div className="skillbar">
             <span className="javascript"></span>
           </div>
         </li>
         <li>
-          <span className="heading">Dart</span>
+          <span className="heading">NodeJS</span>
           <div className="skillbar">
             <span className="dart"></span>
           </div>

@@ -6,8 +6,8 @@ export default function Projects(props) {
       <div>
         <img
           id="cardDetails1"
-          style={{ color: "black", height: "10vw", width: "10vw" }}
-          src={`/images/${props.image}`}
+          style={{ color: "black", height: "9vw", width: "10vw" }}
+          src={props.image}
           alt={props.alt}
         />
       </div>
